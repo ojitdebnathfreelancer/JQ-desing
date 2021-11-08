@@ -35,24 +35,18 @@ $(window).scroll(function(){
     $(".text-slider").slick({
         arrows:false,
         autoplay:true,
-        ariaHidden:false,
+        pauseOnHover:false,
+        asNavFor:".person-slider",
     });
 
-    $(".feed-text-slider").slick({
+    $(".person-slider").slick({
         arrows:false,
         autoplay:true,
-        pauseOnHover:false,
-        ariaHidden:true,
-        asNavFor:".feed-person-slider",
-    });
-
-    $(".feed-person-slider").slick({
-        arrows:false,
         slidesToShow:3,
         centerMode:true,
         centerPadding:"0px",
-        autoplay:true,
-        asNavFor:".feed-text-slider",
+        pauseOnHover:false,
+        asNavFor:".text-slider",
     });
 
     var mixer = mixitup('.galery-slider');
@@ -85,6 +79,7 @@ $(window).scroll(function(){
         spinner:"cube-grid",
         
     });
+
 });
 
 

@@ -192,124 +192,94 @@ nav css ends
 /*================
 banner css ends
 ===============*/
-#feed-back{
-    height: 400px;
-    background-color: gray;
-    margin-top:50px;
+
+#feed-text .container-size{
+    width: 550px;
 }
 
-#feed-back .content-flex{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: ;
-}
-
-#feed-back .feed-text{
-    height: 200px;
-    margin:20px 0;
-    width:570px;
-    /* background-color: #f1df13; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#feed-back .feed-text .feed-text-slider{
-    /* background-color: saddlebrown; */
-    width: 100%;
-    height: 100%;
-}
-
-#feed-back .feed-text .feed-text-slider .text-item{
-    width: 100%;
-    height: 200px;
-    /* background-color:#fff; */
-    position: relative;
-    z-index:1;
-    padding: 15px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    text-align: center;
-}
-
-#feed-back .feed-text .feed-text-slider .text-item p{
-    font-size: 18px;
-    color:black;
-    line-height: 30px;
-}
-
-#feed-back .feed-text .feed-text-slider .bg1{
-    background-color: #ddd;
-}
-
-#feed-back .feed-text .feed-text-slider .bg2{
-    background-color: #94ecfc;
-}
-
-#feed-back .feed-text .feed-text-slider .bg3{
-    background-color: #dae7a1;
-}
-
-#feed-back .feed-text .feed-text-slider .bg4{
-    background-color: #43e9ff;
-}
-
-/* #feed-back .feed-text .feed-text-slider .slick-list{
-    overflow:visible;
-} */
-
-#feed-back .feed-text .feed-text-slider .text-item .down-arrow{
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    position: absolute;
-    bottom: -20px;
-    left: 45%;
-    transform: translateX(-50%);
-    transform: rotate(45deg);
-    z-index: 9999;
-}
-
-#feed-back .feed-person{
+#feed-text .container1 .text-slider .item .text{
+    width: 500px;
     height: 150px;
-    width:100%;
-    /* background-color: #f113a7; */
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #ced6c5;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#feed-back .feed-person .feed-person-slider{
-    /* background-color: #7907eb; */
-    width:350px;
+#feed-text .container1 .text-slider .item .text p{
+    font-size: 18px;
+    line-height:24px;
 }
 
-#feed-back .feed-person .feed-person-slider .person-item img{
-    transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    width: 100%;
-}
-#feed-back .feed-person .feed-person-slider .slick-center img{
-   transform:scale(1);
-   -webkit-transform:scale(1);
-   -moz-transform:scale(1);
-   -ms-transform:scale(1);
-   -o-transform:scale(0.8);
+#feed-text .container1 .text-slider .item h1{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top:25px;
+    font-size: 20px;
+    color: white;
 }
 
+#feed-text .container1 .text-slider .item .text::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #ced6c5;
+    position: absolute;
+    left: 45%;
+    bottom:-15px;
+    z-index: -1;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
 /*=======================
 feedback slides css ends
+========================*/
+#main-feed{
+    background-color: rgba(30, 30, 32, 0.8);
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.person-size{
+    width:400px;
+    margin-top:20px;
+}
+.person-size .person-slider .person-item img{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    width: 100%;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.person-size .person-slider .slick-center img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/*=======================
+person slides css ends
 ========================*/
 
 #main-menu{
