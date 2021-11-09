@@ -80,6 +80,18 @@ $(window).scroll(function(){
         
     });
 
+    var typed = new Typed('.element', {
+        strings:[ 
+            'Web designer',
+            'AdSense Expert',
+            "Content Creator",
+                            ],
+        smartBackspace: true,
+        typeSpeed:200,
+        backSpeed:100,
+        loop:true,
+      });
+
 });
 
 

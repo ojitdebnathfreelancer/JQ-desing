@@ -282,6 +282,79 @@ feedback slides css ends
 person slides css ends
 ========================*/
 
+#text-banner{
+    height: 700px;
+    background:url(../images/text\ bg.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#text-banner::after{
+    content: '';
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+#text-banner .text-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#text-banner .text-container h1{
+    font-size: 60px;
+    color: transparent;
+    -webkit-text-stroke:1px #05ffc1;
+}
+
+#text-banner .text-container h2{
+    font-size: 40px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+#text-banner .text-container h2 .typed-cursor{
+    color: orange;
+}
+#text-banner .text-container p{
+    font-size: 20px;
+    margin-top:10px;
+    text-transform: capitalize;
+}
+
+#text-banner .text-container a{
+    color:#07ff6e;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+#text-banner .text-container .image{
+    width:400px;
+    height:400px;
+    position: relative;
+    border: 1px solid white;
+}
+
+
+#text-banner .text-container .image img{
+    width: 100%;
+}
+
+/*=======================
+text banner css ends
+========================*/
 #main-menu{
     /* background-color: red; */
     margin-top:30px;
